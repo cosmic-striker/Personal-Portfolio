@@ -1,27 +1,19 @@
-// Handle form submission with a thank you alert and form reset
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for your message!');
-    this.reset();
+// Smooth Scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-// Toggle the navigation menu visibility
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('active');
-});
-
-// Theme toggle: switch between dark and light mode
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-
-themeToggle.addEventListener('click', function() {
-    if (body.classList.contains('dark-mode')) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-        themeToggle.textContent = '🌙'; // Dark mode icon
-    } else {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        themeToggle.textContent = '🌞'; // Light mode icon
-    }
+// Dynamic Project Card Effect
+document.querySelectorAll('.project').forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.backgroundColor = '#2e2e2e';
+    });
+    card.addEventListener('mouseout', () => {
+        card.style.backgroundColor = '#1e1e1e';
+    });
 });
