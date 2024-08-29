@@ -7,8 +7,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
-
-// Dynamic Project Card Effect
 document.querySelectorAll('.project').forEach(card => {
     card.addEventListener('mouseover', () => {
         card.style.backgroundColor = '#2e2e2e';
