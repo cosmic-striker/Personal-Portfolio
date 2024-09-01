@@ -10,7 +10,6 @@ body {
     line-height: 1.6;
     color: #e0e0e0;
     background-color: #121212;
-
 }
 
 header {
@@ -76,4 +75,29 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .project {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
 }
