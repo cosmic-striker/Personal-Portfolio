@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic-Striker Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,11 +22,13 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="about">
             <h2>About Me</h2>
             <p>Hello! I'm Vishal, also known as Cosmic-Striker. I specialize in cybersecurity and am passionate about protecting systems and data. Welcome to my portfolio!</p>
         </section>
+
         <section id="skills">
             <h2>Skills</h2>
             <ul>
@@ -34,22 +40,48 @@
                 <li>Python for Security</li>
             </ul>
         </section>
+
         <section id="projects">
             <h2>Projects</h2>
+
             <div class="project" data-hover="true">
                 <h3>Vulnerability Scanner</h3>
                 <p>Developed a tool to scan and identify vulnerabilities in web applications.</p>
             </div>
+
             <div class="project" data-hover="true">
                 <h3>Malware Analysis Framework</h3>
                 <p>Created a framework for analyzing and classifying different types of malware.</p>
             </div>
-            <!-- Add more projects as needed -->
+
+            <div class="project" data-hover="true" onclick="window.location.href='https://github.com/cosmic-striker/kIvI'">
+                <h3>test run </h3>
+                <p>Created a framework for analyzing and classifying different types of malware.</p>
+            </div>
+
         </section>
+
     </main>
+
     <script src="script.js"></script>
+
     <footer id="footer">
         <p>&copy; 2024 Cosmic-Striker. All rights reserved.</p>
+
+        <div class="icons">
+
+            <a href="https://mail.google.com" target="_blank" aria-label="Gmail">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://github.com/cosmic-striker" target="_blank" aria-label="github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vishal-d-124762290" target="_blank" aria-label="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+        </div>
+        
     </footer>
     
 </body>

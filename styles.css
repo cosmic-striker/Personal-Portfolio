@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #e0e0e0;
     background-color: #121212;
+
 }
 
 header {
@@ -77,27 +78,17 @@ footer {
     width: 100%;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    header {
-        padding: 0.5rem;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
+footer .icons {
+    margin-top: 10px;
+}
 
-    nav ul li {
-        margin: 5px 0;
-    }
-    
-    main {
-        padding: 10px;
-    }
-    
-    .project {
-        padding: 10px;
-        margin-bottom: 5px;
-    }
+footer .icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .icons a:hover {
+    color: #ddd;
 }
